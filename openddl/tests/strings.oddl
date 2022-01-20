@@ -1,0 +1,12 @@
+string
+{
+    "Hello, world!",
+    "",
+    "This\nhas\nnew\nlines",
+    "Cost: €5",
+    "Random byte: \xAB"
+        
+    // Not yet supported
+    /* "Random code point: \u10AB", */
+    /* "Random code point: \U01F600" */
+}

@@ -1,0 +1,7 @@
+// This is a simple example structure containing four 32-bit int values
+
+int32[4] { {1, 2, 3, 4} }
+
+int32[3] { {1, 2, 3 },
+           {4, 5, 6 },
+           {7, 8, 9 }}

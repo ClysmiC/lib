@@ -1,0 +1,12 @@
+Vertex
+{
+    Vector3 %pos
+    {
+        float { 1.1, 2.2, 3.3 }
+    }
+
+    Vector3 %normal
+    {
+        float { 0, 0, -1 }
+    }
+}

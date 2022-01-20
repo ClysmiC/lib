@@ -1,0 +1,2 @@
+type $types1 { bool, i16, t}
+t $types2 { ref, string, double }

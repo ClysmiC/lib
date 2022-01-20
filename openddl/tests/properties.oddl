@@ -1,0 +1,11 @@
+Mesh (lod = 2, part = "Left Hand")
+{
+}
+
+Mesh ()
+{
+}
+
+Mesh $NamedMesh (boolProperty, otherBoolProperty, intProperty = 12)
+{
+}

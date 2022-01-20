@@ -1,0 +1,27 @@
+Person $alice
+{
+    Name { string {"Alice"} }
+    
+    Friends
+    {
+        ref { $bob, $charles, $charles%children%debbie }
+    }
+}
+
+Person $bob
+{
+    Name { string {"Bob"} }
+}
+
+Person $charles
+{
+    Name { string {"Charles"} }
+
+    ChildList %children
+    {
+        Person %debbie
+        {
+            Name { string {"Debbie"} }
+        }
+    }
+}

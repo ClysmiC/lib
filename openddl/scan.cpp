@@ -562,7 +562,7 @@ PeekToken(Scanner * scanner)
 }
 
 internal bool
-MatchPeekToken(Scanner * scanner, TokenType type, Token * poToken) // !optional =nullptr
+MatchPeekToken(Scanner * scanner, TokenType type, Token * OPTIONAL0(poToken))
 {
     Token peeked = PeekToken(scanner);
     if (peeked.type == type)
@@ -576,7 +576,7 @@ MatchPeekToken(Scanner * scanner, TokenType type, Token * poToken) // !optional 
 }
 
 internal bool
-MatchNextToken(Scanner * scanner, TokenType type, Token * poToken) // !optional =nullptr
+MatchNextToken(Scanner * scanner, TokenType type, Token * OPTIONAL0(poToken))
 {
     if (MatchPeekToken(scanner, type, poToken))
     {

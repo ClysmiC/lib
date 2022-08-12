@@ -75,7 +75,7 @@ EndSubmesh(ObjResult * obj, SubmeshBuilder * sb, DynArray<Submesh> * allSubmeshe
 
 internal ObjResult
 ImportObjFileContents(
-    char * fileContents,
+    String fileContents,
     MemoryRegion memory)
 {
     using namespace SimpleScan;
@@ -92,7 +92,7 @@ ImportObjFileContents(
     // Per-submesh bookkeeping
     SubmeshBuilder sb = StartSubmesh(&result, memory);
     
-    ZStringScanner scanner;
+    StringScanner scanner;
     InitScanner(&scanner, fileContents);
     
     while (HasNextChar(&scanner))
